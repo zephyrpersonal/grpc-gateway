@@ -23,7 +23,7 @@ RUN git clone https://github.com/google/protobuf \
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
-RUN RUN mkdir /go \
+RUN mkdir /go \
   && go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway \
   && go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger \
   && go get -u github.com/golang/protobuf/protoc-gen-go  
