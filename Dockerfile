@@ -1,11 +1,15 @@
 FROM alpine:3.6
 
 RUN apk add --update \
+  autoconf \
+  automake \
+  build-base\
   curl \
   git \
   go \
   libtool \
-  protobuf 
+  protobuf \
+  qt5-qtbase-dev
 
 RUN git clone https://github.com/google/protobuf \
   && cd protobuf \
